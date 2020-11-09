@@ -16,6 +16,8 @@ public class ShellSort {
                     intArray[j] = intArray[j - gap];
                     j -= gap;
                 }
+
+                intArray[j] = newElement;
             }
         }
 
