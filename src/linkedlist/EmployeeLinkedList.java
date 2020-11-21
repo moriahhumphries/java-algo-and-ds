@@ -15,6 +15,10 @@ public class EmployeeLinkedList {
         return size;
     }
 
+    public boolean isEmpty() {
+        return head == null;
+    }
+
     public void printList() {
         EmployeeNode current = head;
         System.out.print("HEAD -> ");

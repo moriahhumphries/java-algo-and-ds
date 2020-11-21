@@ -8,12 +8,17 @@ public class MainSinglyLinkedList {
         EmployeeLL mikeWilson = new EmployeeLL("Mike", "Wilson", 3245);
 
         EmployeeLinkedList list = new EmployeeLinkedList();
+
+        System.out.println(list.isEmpty());
+
         list.addToFront(janeJones);
         list.addToFront(johnDoe);
         list.addToFront(marySmith);
         list.addToFront(mikeWilson);
 
         System.out.println("Size: " + list.getSize());
+
+        System.out.println(list.isEmpty());
 
         list.printList();
 
