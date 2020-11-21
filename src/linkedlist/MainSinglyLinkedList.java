@@ -22,5 +22,10 @@ public class MainSinglyLinkedList {
 
         list.printList();
 
+        list.removeFromFront();
+
+        System.out.println("Size: " + list.getSize());
+        list.printList();
+
     }
 }
