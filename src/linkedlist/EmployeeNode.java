@@ -1,17 +1,15 @@
 package linkedlist;
 
-import lists.arraylists.Employee;
-
 public class EmployeeNode {
-    private Employee employee;
+    private EmployeeLL employeeLL;
     private EmployeeNode next;
 
-    public Employee getEmployee() {
-        return employee;
+    public EmployeeLL getEmployee() {
+        return employeeLL;
     }
 
-    public void setEmployee(Employee employee) {
-        this.employee = employee;
+    public void setEmployee(EmployeeLL employeeLL) {
+        this.employeeLL = employeeLL;
     }
 
     public EmployeeNode getNext() {
@@ -22,7 +20,11 @@ public class EmployeeNode {
         this.next = next;
     }
 
-    public EmployeeNode(Employee employee) {
-        this.employee = employee;
+    public EmployeeNode(EmployeeLL employeeLL) {
+        this.employeeLL = employeeLL;
+    }
+
+    public String toString() {
+        return employeeLL.toString();
     }
 }
