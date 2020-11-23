@@ -53,6 +53,26 @@ public class EmployeeDoublyLinkedList {
         return removedNode;
     }
 
+    public EmployeeNode removeFromEnd() {
+        if (isEmpty()) {
+            return null;
+        }
+
+        EmployeeNode removedNode = tail;
+
+        if (tail.getPrevious() == null) {
+            head = null;
+        } else {
+            tail.getPrevious().setNext(null);
+        }
+
+        tail = tail.getPrevious();
+        size--;
+        removedNode.setPrevious(null);
+        return removedNode;
+
+    }
+
     public int getSize() {
         return size;
     }

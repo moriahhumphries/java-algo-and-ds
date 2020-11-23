@@ -22,5 +22,13 @@ public class Main {
 
         list.printList();
         System.out.println("Size: " + list.getSize());
+
+        list.removeFromFront();
+        list.printList();
+        System.out.println("Size: " + list.getSize());
+
+        list.removeFromEnd();
+        list.printList();
+        System.out.println("Size: " + list.getSize());
     }
 }
