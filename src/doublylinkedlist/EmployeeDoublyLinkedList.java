@@ -40,6 +40,13 @@ public class EmployeeDoublyLinkedList {
         }
 
         EmployeeNode removedNode = head;
+
+        if (head.getNext() == null) {
+            tail = null;
+        } else {
+            head.getNext().setPrevious(null);
+        }
+
         head = head.getNext();
         size--;
         removedNode.setNext(null);
